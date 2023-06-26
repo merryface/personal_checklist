@@ -22,12 +22,12 @@
 	class="bg-surface-100-800-token w-full"
 	>
 		<TabAnchor href="/" selected={$page.url.pathname === '/'}>
-			<svelte:fragment slot="lead">(icon)</svelte:fragment>
-			<span>(label)</span>
+			<svelte:fragment slot="lead"><i class="fa-solid fa-house-chimney"></i></svelte:fragment>
+			<span>Home</span>
 		</TabAnchor>
-		<TabAnchor href="/" selected={$page.url.pathname === '/'}>
-			<svelte:fragment slot="lead">(icon)</svelte:fragment>
-			<span>(label)</span>
+		<TabAnchor href="/tour-departure" selected={$page.url.pathname === '/tour-departure'}>
+			<svelte:fragment slot="lead"><i class="fa-solid fa-plane-departure"></i></svelte:fragment>
+			<span>Tour Departure</span>
 		</TabAnchor>
 		<!-- ... -->
 	</TabGroup>
