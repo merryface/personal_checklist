@@ -29,6 +29,5 @@
 			<svelte:fragment slot="lead"><i class="fa-solid fa-plane-departure"></i></svelte:fragment>
 			<span>Tour Departure</span>
 		</TabAnchor>
-		<!-- ... -->
 	</TabGroup>
 </div>

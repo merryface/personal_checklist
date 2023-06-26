@@ -1,11 +1,12 @@
-<script>
+<script lang='ts'>
   import ChecklistItem from "./ChecklistItem.svelte";
+  export let items: Array<string>
 </script>
 
 <div class="checklist w-full">
-  <ChecklistItem item="Item 1" action="Action 1" />
-  <ChecklistItem item="Item 2" action="Action 2" />
-  <ChecklistItem item="Item 3" action="Action 3" />
+  {#each items as item}
+    <ChecklistItem  item={item} />
+  {/each}
 </div>
 
 <style>
