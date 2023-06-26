@@ -5,6 +5,30 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+
+	import { TabGroup, Tab, TabAnchor } from '@skeletonlabs/skeleton';
+	import { page } from '$app/stores';
 </script>
 
-<slot />
+<div class="container h-full mx-auto flex flex-col gap-3 justify-center items-center">
+	<slot />
+	<TabGroup 
+	justify="justify-center"
+	active="variant-filled-primary"
+	hover="hover:variant-soft-primary"
+	flex="flex-1 lg:flex-none"
+	rounded=""
+	border=""
+	class="bg-surface-100-800-token w-full"
+	>
+		<TabAnchor href="/" selected={$page.url.pathname === '/'}>
+			<svelte:fragment slot="lead">(icon)</svelte:fragment>
+			<span>(label)</span>
+		</TabAnchor>
+		<TabAnchor href="/" selected={$page.url.pathname === '/'}>
+			<svelte:fragment slot="lead">(icon)</svelte:fragment>
+			<span>(label)</span>
+		</TabAnchor>
+		<!-- ... -->
+	</TabGroup>
+</div>

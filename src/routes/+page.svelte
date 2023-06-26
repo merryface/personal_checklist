@@ -1,13 +1,8 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<main class="container h-full mx-auto flex flex-col gap-3 items-center px-5 py-10">
+	<h1 class="text-[3.5rem] leading-[4.5rem]">Personal checklist</h1>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout, the CSS import order is critical!</li>
-			<li><code class="code">/src/app.postcss</code> - minimal css to make the page full screen, may not be relevant for your project</li>
-			<li><code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents</li>
-		</ul>
-	</div>
-</div>
+	<p class="text-2xl py-10">
+		Checklists to make sure you don't forget anything when you're going on a tour and stuff.
+	</p>
+
+</main>
