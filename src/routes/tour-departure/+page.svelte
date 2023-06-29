@@ -2,7 +2,7 @@
   import Checklist from "$lib/components/Checklist.svelte";
 
   const checklist = [
-    "Passport",
+    "Passports",
     "Company ID",
     "AMEX Card", 
     "Licenses & Medicals",

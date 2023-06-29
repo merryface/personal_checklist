@@ -10,7 +10,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="container h-full mx-auto flex flex-col gap-3 justify-center items-center">
+<div class="container h-full mx-auto flex flex-col gap-3 justify-center items-center my-9">
 	<slot />
 	<TabGroup 
 	justify="justify-center"
@@ -19,7 +19,7 @@
 	flex="flex-1 lg:flex-none"
 	rounded=""
 	border=""
-	class="bg-surface-100-800-token w-full"
+	class="bg-surface-100-800-token w-full fixed bottom-0 left-0 right-0"
 	>
 		<TabAnchor href="/" selected={$page.url.pathname === '/'}>
 			<svelte:fragment slot="lead"><i class="fa-solid fa-house-chimney"></i></svelte:fragment>
@@ -27,7 +27,11 @@
 		</TabAnchor>
 		<TabAnchor href="/tour-departure" selected={$page.url.pathname === '/tour-departure'}>
 			<svelte:fragment slot="lead"><i class="fa-solid fa-plane-departure"></i></svelte:fragment>
-			<span>Tour Departure</span>
+			<span>Tour Dep</span>
+		</TabAnchor>
+		<TabAnchor href="/tour-before-bed" selected={$page.url.pathname === '/tour-before-bed'}>
+			<svelte:fragment slot="lead"><i class="fa-solid fa-bed"></i></svelte:fragment>
+			<span>Tour Bed</span>
 		</TabAnchor>
 	</TabGroup>
 </div>
