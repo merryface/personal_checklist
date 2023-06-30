@@ -2,8 +2,8 @@
   import Checklist from "$lib/components/Checklist.svelte";
 
   const checklist = [
-    "Passports in shirt pocket",
-    "Compass in left shirt pocket",
+    "Passport - Shirt pocket",
+    "Compass - Shirt pocket",
     "Ipad charging",
     "Phones charging",
     "Update Comply",
@@ -12,8 +12,8 @@
     "Iron as required",
     "Eppaulettes on shirt",
     "Set alarms",
-    " WOLC Start - Set wake up call",
-    "Latest expenses on Concur"
+    "Set wake up call",
+    "Concur"
   ]
 
 </script>
@@ -22,8 +22,3 @@
   <h1 class="text-[1.5rem] leading-[2rem] text-center mb-10">Tour Preparation Checklist</h1>
   <Checklist items={checklist} />
 </main>
-
-<style>
-  main {
-  }
-</style>
