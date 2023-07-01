@@ -3,6 +3,7 @@
 
   const checklist = [
     "Passports",
+    "Work Phone",
     "Company ID",
     "AMEX Card", 
     "Licenses & Medicals",
