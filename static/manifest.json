@@ -1,7 +1,7 @@
 {
   "name": "Personal Checklist",
   "short_name": "Xlist",
-  "start_url": "/app.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#2416BE",
   "theme_color": "#FFFFFF",
@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/static/icon.png",
+      "src": "icon/icon.png",
       "type": "image/png",
       "sizes": "480x480"
     }
